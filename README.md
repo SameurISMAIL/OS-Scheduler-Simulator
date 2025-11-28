@@ -46,7 +46,7 @@ cd OS-Scheduler-Simulator
 make
 
 # 3. Run the simulator
-./scheduler
+./game params.txt 
 ```
 
 The program displays a menu where you can choose any algorithm and see the full execution trace.
