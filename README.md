@@ -87,18 +87,23 @@ chmod +x run_frontend.sh
 This will:
 
 Install dependencies (if needed)
-Start Vite dev server at http://localhost:5173 (or http://localhost:3000)
+Start Vite dev server at http://localhost:3000
 
-The app will open automatically in your browser.
-Now you can select any algorithm, edit processes, change quantum, and run simulations!
-Default Process Configuration
-Edit params.txt to change the initial processes loaded on startup:
-txt# PID, Arrival, Burst, Priority
+The app will open automatically in your browser.  
+Now you can select any algorithm, edit processes, change the quantum, and run simulations.
+
+### Default Process Configuration
+
+Edit `params.txt` to change the initial processes loaded on startup:
+
+```txt
+# PID, Arrival, Burst, Priority
 P1, 0, 8, 4
 P2, 1, 1, 3
 P3, 3, 3, 1
 P4, 4, 2, 5
 P5, 6, 5, 2
+```
 
 
 ## Screenshots
