@@ -62,10 +62,14 @@ text## Screenshots
 ```bash
 git clone https://github.com/SameurISMAIL/OS-Scheduler-Simulator.git
 cd OS-Scheduler-Simulator
+```
+
 2. Start the Backend (C Server)
 Open a terminal and run:
-Bashchmod +x run_backend.sh
+```bash
+chmod +x run_backend.sh
 ./start_backend.sh
+```
 This will:
 
 Compile all scheduling algorithm executables
@@ -75,8 +79,10 @@ Start the API server at http://localhost:3001
 Keep this terminal running.
 3. Start the Frontend (React App)
 Open a second terminal:
-Bashchmod +x run_frontend.sh
+```bash
+chmod +x run_frontend.sh
 ./start_frontend.sh
+```
 This will:
 
 Install dependencies (if needed)
