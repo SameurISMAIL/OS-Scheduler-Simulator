@@ -1,0 +1,56 @@
+/* Container for the metrics section */
+.metrics-section {
+    padding: 1.5rem;
+}
+
+.metrics-row {
+    display: grid;
+    /* Default: 3 Columns */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Individual Card Styling */
+.metric-card {
+    background-color: var(--bg-dark);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid var(--border-color, #374151);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.metric-title {
+    font-size: 0.875rem;
+    color: var(--text-secondary, #9ca3af);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.metric-value {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--text-primary, #f9fafb);
+}
+
+.metric-unit {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-secondary, #9ca3af);
+    margin-left: 0.25rem;
+}
+
+/* Responsive Design: Stack cards on tablets and mobile */
+@media (max-width: 768px) {
+    .metrics-row {
+        grid-template-columns: 1fr; /* Stack vertically */
+    }
+}

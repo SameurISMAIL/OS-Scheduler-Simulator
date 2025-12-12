@@ -1,0 +1,75 @@
+.gantt-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gantt-chart-wrapper {
+    margin-top: 15px;
+}
+
+.gantt-chart {
+    position: relative;
+    height: 50px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.gantt-block {
+    position: absolute;
+    height: 100%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.gantt-block:nth-child(odd) {
+  background-color: #5dade2;
+}
+.gantt-block:hover {
+  opacity: 0.8;
+}
+.pid-label {
+    white-space: nowrap;
+}
+
+
+.timeline {
+    position: relative;
+    height: 20px;
+    width: 700px;
+    margin-top: 5px;
+}
+
+.time-marker {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #555;
+}
+.time-marker span {
+    position: relative;
+    top: 8px;
+}
+
+.time-marker::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 8px;
+    background-color: #ccc;
+    top: -1px;
+    left: 50%;
+}
