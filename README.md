@@ -23,9 +23,11 @@ Visualize how classic and advanced scheduling algorithms work in real-time with 
 - Responsive and Responsive UI with dark theme
 
 ## Project Structure
+
+```text
 OS-Scheduler-Simulator/
 ├── algorithms/
-│   └── source/          ← C source files for each algorithm
+│   ├── source/          ← C source files for each algorithm
 │   └── build/           ← Compiled executables (generated)
 ├── backend/
 │   ├── server.c         ← Mongoose-based HTTP server
@@ -42,10 +44,9 @@ OS-Scheduler-Simulator/
 ├── Makefile             ← Builds all C algorithms
 ├── run_backend.sh       ← Build & start C backend
 └── run_frontend.sh      ← Start React development server
-text## Screenshots
+```
 
-![OS Scheduler Simulator Screenshot](https://i.imgur.com/YourScreenshotHere.jpg)
-> Running FIFO with 5 processes – Gantt chart, logs, and metrics
+
 
 ## How to Run Locally
 
@@ -135,7 +136,8 @@ P5, 6, 5, 2
 ### Multilevel Feedback Queue (Dynamic)
 ![Multilevel Dynamic Scheduling](Screenshots/multilevel_dynamic.png)
 
+## Author
 
-Author
-Sameur ISMAIL
-GitHub: @SameurISMAIL
+**Sameur ISMAIL**  
+GitHub: [@SameurISMAIL](https://github.com/SameurISMAIL)
+
